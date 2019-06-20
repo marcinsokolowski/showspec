@@ -43,11 +43,7 @@ and if you use showspec software please reference this paper : http://adsabs.har
        - which python
        - mv anaconda_dir anaconda_dir_TMP
      
-     mkdir build/
-     cd build
-     cmake ../
-     make 
-     make install
+     mkdir build/;cd build;cmake ../;make;make install
    
 
 4/ For more information see : doc/showspec_standalone.pdf (or odt)
