@@ -49,7 +49,11 @@ and if you use showspec software please reference this paper : http://adsabs.har
 6/ Global Sky Model (GSM) data files can be downloaded from http://xte.mit.edu/angelica/gsm/gsm.tar.gz 
    and other details about the GSM model can be found on this webpage : http://space.mit.edu/home/angelica/gsm/ .
    
-   I have also generated gsm files at every 10 MHz step and put them here : 
-   The directory gsm/ should contain these .txt files and placed where showspec program is executed (or symbolic link created : ln -s $GSM_FULL_PATH gsm)
+   I have also generated gsm files at every 10 MHz step in frequnecy range 10 - 500 MHz (inclusive) and made them available them here : 
+
+        https://www.dropbox.com/sh/xt6qxlyhxrskw1k/AACH5rneuATCQS2MTZFhHyn9a?dl=0      
+
+   The directory gsm/ should contain  .out files and placed where showspec program is executed (or symbolic link created : ln -s $GSM_FULL_PATH gsm)
+   The .dat files are experimental version still under test, but they are much smaller and should work too.
 
    The source code for gsm was also included into this distribution of showspec software ( see gsm/README for details and proper referencing )

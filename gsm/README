@@ -1,0 +1,61 @@
+
+- Compilation:
+  make all
+
+- Execution :
+  ./skybkg_angelica_range
+  
+  Answer a couple of questions, for example to generate model at 150 and 160 MHz :
+   Input frequency range at which to make a map [in MHz]
+   Lower limit :
+   150
+   Upper limit :
+   160
+   Enter the step [in MHz] :
+   10
+   Base file name of file in which to save the map ?
+   gsm           
+   Enter name of output directory [default = skymaps/]
+   gsm
+
+- .dat.gz files required to generate model files are available at :
+     https://www.dropbox.com/sh/xt6qxlyhxrskw1k/AACH5rneuATCQS2MTZFhHyn9a?dl=0
+
+   tar zxvf data.tar.gz    
+   
+
+
+- Output files will be in subdirectory gsm/ in two files :
+  gsm_ni150.00.out 
+  gsm_ni160.00.out
+  
+  They are healpix ordered brightness temperature acroess the entire sky and can be used as an input to showspec program 
+
+
+
+- .out files generated every 10 MHz are available at :
+    https://www.dropbox.com/sh/xt6qxlyhxrskw1k/AACH5rneuATCQS2MTZFhHyn9a?dl=0
+   tar zxvf gsm.tar.gz    
+
+
+- Please reference the following paper :
+
+http://adsabs.harvard.edu/abs/2008MNRAS.388..247D
+
+@ARTICLE{2008MNRAS.388..247D,
+   author = {{de Oliveira-Costa}, A. and {Tegmark}, M. and {Gaensler}, B.~M. and
+        {Jonas}, J. and {Landecker}, T.~L. and {Reich}, P.},
+    title = "{A model of diffuse Galactic radio emission from 10 MHz to 100 GHz}",
+  journal = {\mnras},
+archivePrefix = "arXiv",
+   eprint = {0802.1525},
+ keywords = {methods: data analysis , astronomical data bases: miscellaneous , ISM: structure , diffuse radiation , radio continuum: ISM},
+     year = 2008,
+    month = jul,  
+   volume = 388,  
+    pages = {247-260},
+      doi = {10.1111/j.1365-2966.2008.13376.x},
+   adsurl = {http://adsabs.harvard.edu/abs/2008MNRAS.388..247D},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
