@@ -38,8 +38,17 @@ and if you use showspec software please reference this paper : http://adsabs.har
 
      target_link_libraries(showspec_standalone_mwa ${NOVA_LIB} ${FITSIO_LIB} ${HEALPIX_LIBRARIES} ${HDF5_C_LIBRARY} ${HDF5_LIB} ${Boost_SYSTEM_LIBRARY} ${Boost_FILESYSTEM_LIBRARY} /usr/lib/libgomp.so.1)
 
-
-
+   - if python anaconda is installed there are often problems with hdf5 include paths and linking libraries. If this happens try temporarily moving anaconda directory :
+       
+       - which python
+       - mv anaconda_dir anaconda_dir_TMP
+     
+     mkdir build/
+     cd build
+     cmake ../
+     make 
+     make install
+   
 
 4/ For more information see : doc/showspec_standalone.pdf (or odt)
 
@@ -57,3 +66,5 @@ and if you use showspec software please reference this paper : http://adsabs.har
    The .dat files are experimental version still under test, but they are much smaller and should work too.
 
    The source code for gsm was also included into this distribution of showspec software ( see gsm/README for details and proper referencing )
+
+
